@@ -6,9 +6,9 @@ Library prep performed by Erin Nishimura using the NEBNext Ultra II directional 
 Data analysis performed by Kayla Stewart.
 
 Scripts for RNAseq pipeline on Alpine - in 02_scripts directory
-  -execute_RNASeq_pipeline 
-  -RNAseq_analyzer
-  -RNAseq_cleanup
+  execute_RNASeq_pipeline 
+  RNAseq_analyzer
+  RNAseq_cleanup
 
 Scripts for DGE Analysis in R - in 02_scripts directory 
 

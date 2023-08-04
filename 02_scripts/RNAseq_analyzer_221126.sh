@@ -151,7 +151,7 @@ do
     ## Make output directories
         mkdir -p $outputdir"01_fastp/"$samplename
     
-    ## execute fastp
+   ## execute fastp, -U and --umi_loc added to detect UMI added in TakaraBio SMARTer RNAseq Pico Input Mammalian v3 kit. 
     cmd1="fastp -i $inputdir/$sample1 \
 -I $inputdir/$sample2 \
 -o ${outputdir}01_fastp/${samplename}/${samplename}_trim_1.fastq \
@@ -159,8 +159,10 @@ do
 -h ${outputdir}01_fastp/${samplename}/${samplename}_report.html \
 -j ${outputdir}01_fastp/${samplename}/${samplename}_report.json \
 --detect_adapter_for_pe \
+-U \
+--umi_loc=index1 \
 --thread 2 \
--x -g "
+-x -g -p
     
     echo -e "\t$ ${cmd1}"
     time eval $cmd1

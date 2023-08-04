@@ -3,7 +3,6 @@ RNA seq of hand dissected adult worm intestines. Dissection performed by Erin Ni
 
 Library prep performed by Erin Nishimura using the NEBNext Ultra II directional RNA library prep kit (E7760S).
 
-Data analysis performed by Kayla Stewart.
 
 Scripts for RNAseq pipeline on Alpine - in 02_scripts directory
   execute_RNASeq_pipeline 
